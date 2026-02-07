@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Ocean Studios - Hand-poured Tranquility</title>
+    <meta name="description" content="Artisanal soy wax candles handcrafted with premium fragrances. Meditative coastal scents for your sanctuary.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Light Ocean</div>
+            <div class="nav-links">
+                <a href="#story" class="nav-link">Our Story</a>
+                <a href="#scents" class="nav-link">Scent Profiles</a>
+                <a href="#ritual" class="nav-link">The Ritual</a>
+                <button class="email-btn" onclick="openEmailModal()">Join Inner Circle</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Hand-poured Tranquility</h1>
+                <p class="hero-subtitle">Artisanal soy wax candles infused with meditative coastal scents</p>
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="openEmailModal()">Join the Waitlist</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="flame-animation">
+                    <div class="flame"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="story">
+            <div class="container">
+                <div class="story-content">
+                    <h2 class="section-title">The Craft</h2>
+                    <p class="section-subtitle">Born from the meeting of tide and tranquility</p>
+                    <div class="story-grid">
+                        <div class="story-item">
+                            <h3>Premium Soy Wax</h3>
+                            <p>100% natural soy wax derived from sustainable American-grown soybeans. Clean burning with superior fragrance throw.</p>
+                        </div>
+                        <div class="story-item">
+                            <h3>Phthalate-Free Fragrances</h3>
+                            <p>Artfully blended essential oils and premium fragrance oils, free from harmful chemicals for pure aromatherapy.</p>
+                        </div>
+                        <div class="story-item">
+                            <h3>Handcrafted Process</h3>
+                            <p>Each candle is poured in small batches in our coastal studio, ensuring quality and attention to every detail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="scents" class="scents">
+            <div class="container">
+                <h2 class="section-title">The Senses</h2>
+                <p class="section-subtitle">Coming Soon</p>
+                <div class="scent-gallery">
+                    <div class="scent-card">
+                        <div class="scent-image placeholder-wave"></div>
+                        <h3>Coastal Dawn</h3>
+                        <p>A quiet morning on the coast; notes of sea salt and crushed sage</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                    <div class="scent-card">
+                        <div class="scent-image placeholder-wave"></div>
+                        <h3>Linen & Seafoam</h3>
+                        <p>Fresh linens drying in ocean breezes; hints of white tea and driftwood</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                    <div class="scent-card">
+                        <div class="scent-image placeholder-wave"></div>
+                        <h3>Amber Tide</h3>
+                        <p>Warm amber and coastal ambergris; whispers of vanilla and sandalwood</p>
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ritual" class="ritual">
+            <div class="container">
+                <h2 class="section-title">The Ritual</h2>
+                <p class="section-subtitle">Mindful candle care for lasting tranquility</p>
+                <div class="ritual-tips">
+                    <div class="tip">
+                        <h3>First Burn</h3>
+                        <p>Allow your candle to burn until the entire surface melts, creating a memory for even burning.</p>
+                    </div>
+                    <div class="tip">
+                        <h3>Trim the Wick</h3>
+                        <p>Keep wicks trimmed to 1/4 inch before each use for a clean, smoke-free flame.</p>
+                    </div>
+                    <div class="tip">
+                        <h3>Mindful Moments</h3>
+                        <p>Take three deep breaths as you light your candle, setting intention for your practice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Light Ocean</div>
+                    <p>Hand-poured tranquility for your sanctuary</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <a href="#" onclick="openEmailModal()">Join Inner Circle</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Learn More</h4>
+                        <a href="#story">Our Story</a>
+                        <a href="#ritual">Candle Care</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Light Ocean Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEmailModal()">&times;</span>
+            <h3>Join the Inner Circle</h3>
+            <p>Be the first to know when our candles launch and receive exclusive offers.</p>
+            <form id="emailForm" onsubmit="handleEmailSubmit(event)">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn-primary">Join Waitlist</button>
+            </form>
+            <div id="emailSuccess" class="success-message" style="display: none;">
+                <p>Thank you for joining! We'll keep you updated on our launch.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
