@@ -1,125 +1,50 @@
-# Light Ocean Studios - Website Implementation
+# Light Ocean Studios
 
-A high-end, minimalist e-commerce landing page for Light Ocean Studios featuring a "Meditative Coastal" aesthetic with soft sands, muted seafoam greens, and warm linen textures.
+A high-end, minimalist e-commerce landing page for Light Ocean Studios.
 
-## Design System
+For a deeper dive into the project's design, business strategy, and next steps, please refer to the documentation:
+- **[DESIGN.md](./docs/DESIGN.md)**: The complete design system, including color palette and typography.
+- **[BUSINESS_BRAIN.md](./docs/BUSINESS_BRAIN.md)**: The strategic hub for the business, including vision and action plans.
+- **[AGENTS.md](./docs/AGENTS.md)**: A breakdown of the key business personas and responsibilities.
+- **[TODO.md](./docs/TODO.md)**: The pre-launch checklist and future development tasks.
 
-### Color Palette
-- **Sand (#F5F2ED)** - Primary background
-- **Sage (#87A96B)** - Primary accent/CTA color
-- **Seafoam (#A8DADC)** - Secondary accent
-- **Linen (#E8E3D8)** - Section backgrounds
-- **Amber (#D4A574)** - Flame animation accent
+## Features
 
-### Typography
-- **Headings**: Lora (serif) - Elegant, traditional feel
-- **Body**: Inter (sans-serif) - Clean, modern, breathable
+- **Responsive Design**: Mobile-first approach ensures a seamless experience on all devices.
+- **Interactive Elements**: Engaging micro-interactions, including a hero flame animation, modals, and scroll-triggered effects.
+- **Performant Code**: Optimized for speed with efficient animations, lazy loading considerations, and modern CSS.
+- **Accessible**: Built with semantic HTML5 and accessibility best practices in mind.
+- **Email Capture**: A modal captures user emails for the waitlist, currently using local storage.
 
-## Website Structure
+## Tech Stack
 
-### The Breath (Hero)
-- Full-width hero section with animated flame effect
-- "Hand-poured Tranquility" tagline
-- Email capture CTA for waitlist
-- Subtle parallax scrolling effects
+- **HTML5**: Semantic and modern markup.
+- **CSS3**: Advanced styling with features like `clamp()` for fluid typography and custom properties for easy theming.
+- **JavaScript (ES6+)**: Powers interactive elements, animations, and the email capture modal.
 
-### The Craft (Our Story)
-- Three-column grid showcasing:
-  - Premium Soy Wax details
-  - Phthalate-Free Fragrances
-  - Handcrafted Process
-- Fade-in animations on scroll
+## Getting Started
 
-### The Senses (Scent Gallery)
-- "Coming Soon" product gallery with placeholder wave animations
-- Three scent profiles:
-  - Coastal Dawn
-  - Linen & Seafoam  
-  - Amber Tide
-- Card hover effects and "Coming Soon" badges
+To get a local copy up and running, simply open the `index.html` file in your web browser.
 
-### The Ritual (Candle Care)
-- Educational content about mindful burning
-- Three key tips:
-  - First Burn
-  - Trim the Wick
-  - Mindful Moments
-- Accent styling with seafoam borders
-
-## Features Implemented
-
-### ✅ Core Functionality
-- Semantic HTML5 structure
-- Responsive design (mobile-first approach)
-- Smooth scrolling navigation
-- Email capture modal with local storage
-- Intersection Observer animations
-- Accessibility considerations
-
-### ✅ Interactive Elements
-- Animated flame in hero section
-- Modal popup for email capture
-- Hover states on cards and buttons
-- Scroll-triggered animations
-- Parallax effects
-
-### ✅ Responsive Design
-- Mobile-optimized navigation
-- Flexible grid layouts
-- Scalable typography (clamp() functions)
-- Touch-friendly interactive elements
-
-## Technical Implementation
-
-### Performance Optimizations
-- CSS animations over JavaScript where possible
-- Lazy loading image system prepared
-- Efficient event handling
-- LocalStorage for email capture
-
-### Cross-browser Compatibility
-- Modern CSS features with fallbacks
-- Vendor prefixes where needed
-- Semantic HTML for better SEO
-
-## Next Steps (Pre-launch Checklist)
-
-### 📸 High-Res Photography
-Replace placeholder wave animations with:
-- Lifestyle candle photos in home settings
-- Product shots on bedside tables, near baths
-- Consistent aesthetic across all images
-
-### 🎯 Scent Descriptions
-Enhance with evocative descriptions:
-- Focus on feelings, not just ingredients
-- Create emotional connections
-- Maintain meditative tone
-
-### 📧 Email Marketing
-- Connect email capture to marketing platform
-- Set up automated welcome sequences
-- Prepare launch announcement campaigns
-
-### 💳 E-commerce Setup
-- Configure payment gateways (Stripe/PayPal)
-- Set up product catalog backend
-- Implement shopping cart functionality
-- Create shipping and policy pages
-
-### 🌐 SEO & Analytics
-- Add meta tags and structured data
-- Set up Google Analytics
-- Configure Google Search Console
-- Submit sitemap
-
-## File Structure
+```bash
+# No installation required for the static site
+# Simply open html/index.html
 ```
-lightoceanstudios/
-├── index.html      # Main HTML structure
-├── styles.css      # Complete styling with design system
-├── script.js       # Interactive functionality
-└── README.md       # This documentation
+
+## Project Structure
+
+```
+.
+├── docs/
+│   ├── AGENTS.md
+│   ├── BUSINESS_BRAIN.md
+│   ├── DESIGN.md
+│   └── TODO.md
+├── html/
+│   ├── index.html
+│   ├── script.js
+│   └── styles.css
+└── README.md
 ```
 
 ## Browser Support
@@ -127,13 +52,3 @@ lightoceanstudios/
 - Firefox 75+
 - Safari 13+
 - Edge 80+
-
-## Launch Checklist
-- [ ] Domain configuration
-- [ ] SSL certificate
-- [ ] Performance testing
-- [ ] Mobile responsiveness verification
-- [ ] Email capture testing
-- [ ] Cross-browser compatibility check
-- [ ] Accessibility audit
-- [ ] Analytics integration
